@@ -47,9 +47,10 @@ const (
 	extraNegative rating = -1.2
 )
 
+var vehicleResult map[string]feedbackResult
+var inventory []vehicle
+
 func init() {
-	var vehicleResult map[string]feedbackResult
-	var inventory []vehicle
 
 	inventory = []vehicle{
 		bike{"FTR 1200", "Indian"},
